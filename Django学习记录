@@ -1,0 +1,22 @@
+创建项目：
+django-admin.py startproject learning_log .
+
+使用虚拟环境：
+ll_env\Scripts\activate
+
+停止使用虚拟环境：
+deactivate
+
+
+激活虚拟环境：
+ll_env\Scripts\activate
+
+
+每当修改model.py时，都要执行：
+# 调用makemigrations
+python manage.py makemigrations learning_logs
+# 迁移项目
+python manage.py migrate
+
+运行项目：
+python manage.py runserver
