@@ -20,3 +20,6 @@ python manage.py migrate
 
 运行项目：
 python manage.py runserver
+
+前端能看到的都是model中的实例，实例之前可能有外键关系，比如topic和entry
+url → 视图（views.##） → 模板（##.html）
