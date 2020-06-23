@@ -1,9 +1,8 @@
 # coding:utf-8
-# @Time    :  2020-06-22 18:20
+# @Time    :  2020-06-23 16:27
 # @Author  : Administrator
 # @File    : learning_log
-# @Description : 
-"""定义learning_logs的URL模式"""
+# @Description :
 from django.conf.urls import url
 from django.urls import path,re_path,include
 from . import views
@@ -12,10 +11,10 @@ urlpatterns = [
     # url(r'^$', views.index, name='index'),
     # path('',views.index),
     re_path('^$', views.index, name='index'),
-    # 显示所有主题
-    path('topics/', views.topics,name='topics'),
-    # 特定主题的详细页面
-    url(r'^topics/(?P<topic_id>\d+)/$', views.topic, name='topic'),
+    # 显示所有披萨
+    path('pizza/', views.pizzas,name='pizzas'),
+    # 披萨的配料
+    url(r'^pizza/(?P<pizza_id>\d+)/$', views.pizza, name='pizza'),
 ]
 
-app_name = 'learning_logs'
+app_name = 'pizzas'
