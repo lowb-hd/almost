@@ -16,6 +16,7 @@ urlpatterns = [
     path('topics/', views.topics,name='topics'),
     # 特定主题的详细页面
     url(r'^topics/(?P<topic_id>\d+)/$', views.topic, name='topic'),
+    url(r'^new_topic/$', views.new_topic, name='new_topic'),
 ]
 
 app_name = 'learning_logs'
