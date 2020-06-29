@@ -24,3 +24,9 @@ class Entry(models.Model):
         """返回模型的字符串表示"""
 
         return self.text[:50] + "..."
+
+class UserInfo(models.Model):
+    user_id = models.CharField("user id ",max_length=4,primary_key=True)
+    user_name = models.CharField("user name",max_length=10)
+    password = models.CharField("password",max_length=10)
+    status = models.CharField("user status 有效/无效",default=1,max_length=5)
