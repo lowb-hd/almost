@@ -21,3 +21,4 @@ class Topping(models.Model):
         """返回模型的字符串表示"""
 
         return self.name[:50] + "..."
+

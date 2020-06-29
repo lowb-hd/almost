@@ -18,7 +18,11 @@ ll_env\Scripts\activate
 # 调用makemigrations
 python manage.py makemigrations learning_logs
 # 迁移项目
+python manage.py migration
+python manage.py makemigrations
 python manage.py migrate
+
+
 
 运行项目：
 python manage.py runserver
